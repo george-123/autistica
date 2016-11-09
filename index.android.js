@@ -38,8 +38,8 @@ export default class Autistica extends Component {
 
             let user_data = JSON.parse(user_data_json);
             let component = {component: Signup};
-
             if (user_data != null) {
+                this.setState({component: Account});
                 // alert(user_data.refreshToken);
                 // app.auth().signInWithCustomToken(user_data.token).then(
                 //     function (result) {
